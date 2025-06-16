@@ -1,0 +1,30 @@
+.result-container {
+    width: 412px;
+    height: 416px;
+    background: linear-gradient(#232a34, #181e27);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .num-result{
+        background-color: #262E38;
+        color: #FC7614;
+        padding: 5px 20px;
+        border-radius: 23px;
+        margin-top: 60px;
+    }
+
+    .thanks{
+        color: white;
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .res-para{
+        color: #969FAD;
+        width: 340px;
+        text-align: center;
+        line-height: 24px;
+    }
+}
