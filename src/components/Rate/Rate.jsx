@@ -31,8 +31,8 @@ function Rate({ number, setNumber, setSubmit }) {
           is appreciated to help us improve our offering!
         </p>
         <div className="btns">
-          {items.map((item) => (
-            <div key={item} className="btn" onClick={() => handleClick(item)}>{item}</div>
+          {items.map((item, index) => (
+            <div key={index} className="btn" style={number == item ? {backgroundColor: "#FC7614", color: "white"} : {}} onClick={() => handleClick(item)}>{item}</div>
           ))}
         </div>
         <button className="submit" onClick={handleSubmit}>SUBMIT</button>
