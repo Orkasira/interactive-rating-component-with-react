@@ -1,23 +1,21 @@
 import "./Rate.css";
 import star from "../../assets/star.png";
 
-
 function Rate({ number, setNumber, setSubmit }) {
   const items = [1, 2, 3, 4, 5];
 
-
-    const handleClick = (item) => {
+  const handleClick = (item) => {
     setNumber(item);
     console.log(item);
   };
 
   const handleSubmit = () => {
-  if (number !== null) {
-    setSubmit(true);
-  } else {
-    alert("გთხოვ აირჩიე შეფასება სანამ Submit-ს დააჭერ.");
-  }
-};
+    if (number !== null) {
+      setSubmit(true);
+    } else {
+      alert("გთხოვ აირჩიე შეფასება სანამ Submit-ს დააჭერ.");
+    }
+  };
 
   return (
     <>
@@ -32,10 +30,23 @@ function Rate({ number, setNumber, setSubmit }) {
         </p>
         <div className="btns">
           {items.map((item, index) => (
-            <div key={index} className="btn" style={number == item ? {backgroundColor: "#FC7614", color: "white"} : {}} onClick={() => handleClick(item)}>{item}</div>
+            <div
+              key={index}
+              className="btn"
+              style={
+                number == item
+                  ? { backgroundColor: "#FC7614", color: "white" }
+                  : {}
+              }
+              onClick={() => handleClick(item)}
+            >
+              {item}
+            </div>
           ))}
         </div>
-        <button className="submit" onClick={handleSubmit}>SUBMIT</button>
+        <button className="submit" onClick={handleSubmit}>
+          SUBMIT
+        </button>
       </section>
     </>
   );

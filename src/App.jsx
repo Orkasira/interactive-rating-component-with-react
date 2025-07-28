@@ -1,5 +1,4 @@
-import { use, useState } from "react";
-import { Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 import Rate from "./components/Rate/Rate";
 import Result from "./components/Result/Result";
 
