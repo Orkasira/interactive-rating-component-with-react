@@ -1,5 +1,5 @@
 import "./Rate.css";
-import star from "../../assets/star.png";
+import star from "../../assets/Star.png";
 
 function Rate({ number, setNumber, setSubmit }) {
   const items = [1, 2, 3, 4, 5];
